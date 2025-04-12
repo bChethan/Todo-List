@@ -1,0 +1,62 @@
+@import url('https://fonts.googleapis.com/css2?family=Exo+2:wght@400;600&family=Montserrat:wght@400;500&display=swap');
+
+body, input, button {
+  font-family: 'Montserrat', sans-serif; /* Clean & neutral */
+}
+
+h1, h2, h3 {
+  font-family: 'Exo 2', sans-serif; /* Slightly futuristic */
+}
+
+.system-text {
+  font-family: 'VT323', monospace; /* Optional for "System" alerts */
+}
+
+body{
+    background-image: url(./assets/imgwall.jpeg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    color: white;
+}
+
+.add-button{
+    color: white;
+    background-color: rgb(17, 113, 210);
+    margin: 10px;
+    border: none;
+    border-radius: 5px;
+    min-width: 60px;
+    min-height: 30px;
+    cursor: pointer;
+}
+
+.remove-button{
+    background-color: red;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    margin: 5px;
+    cursor: pointer;
+    padding: 5px;
+}
+
+.change-button{
+    background-color: green;
+    color: white;
+    border-radius: 5px;
+    border: none;
+    padding: 5px;
+    cursor: pointer;
+}
+
+input[type = "text"]{
+    background-color: black;
+    color: white;
+    border: none;
+}
+
+ol {
+    list-style-type: none; 
+  }
