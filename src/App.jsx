@@ -1,11 +1,11 @@
-import Component from './Component'
+import SoloLevelingTodo from './SoloLevelingTodo'
 import './App.css'
 
 function App() {
 
   return (
     <>
-      <Component/>
+      <SoloLevelingTodo/>
     </>
   )
 }

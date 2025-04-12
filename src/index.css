@@ -31,9 +31,12 @@ body{
     min-height: 30px;
     cursor: pointer;
 }
+.add-button:hover {
+  background-color: rgb(10, 80, 150);
+}
 
 .remove-button{
-    background-color: red;
+    background-color: hsl(0, 100%, 50%);
     color: white;
     border: none;
     border-radius: 5px;
@@ -41,22 +44,36 @@ body{
     cursor: pointer;
     padding: 5px;
 }
+.remove-button:hover{
+  background-color: hsl(0, 100%, 35%);
+}
 
 .change-button{
-    background-color: green;
+    background-color: hsl(120, 100%, 25%);
     color: white;
     border-radius: 5px;
     border: none;
     padding: 5px;
     cursor: pointer;
 }
+.change-button:hover{
+  background-color: hsl(120, 100%, 15%);
+}
 
 input[type = "text"]{
-    background-color: black;
+    background-color: hsla(0, 0%, 0%, 0.623);
     color: white;
     border: none;
+    padding: 10px;
 }
 
 ol {
-    list-style-type: none; 
+    list-style-type: none;
+    margin: 10px;
+    padding: 10px;
+  }
+  @media (max-width:300px) {
+    .add-button,.remove-button,.change-button{
+      min-width: 100%;
+    }
   }
