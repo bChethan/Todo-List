@@ -1,79 +1,102 @@
 @import url('https://fonts.googleapis.com/css2?family=Exo+2:wght@400;600&family=Montserrat:wght@400;500&display=swap');
 
-body, input, button {
-  font-family: 'Montserrat', sans-serif; /* Clean & neutral */
+/* 1. Ensure consistent base font size */
+html {
+  font-size: 16px !important; /* Force override any conflicting styles */
+}
+
+/* 2. Reset default margins/paddings and set body font */
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 1rem; 
+  background-image: url(./assets/imgwall.jpeg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  color: white;
+}
+
+input, button {
+  font-family: 'Montserrat', sans-serif !important;
 }
 
 h1, h2, h3 {
-  font-family: 'Exo 2', sans-serif; /* Slightly futuristic */
+  font-family: 'Exo 2', sans-serif;
+  margin: 0.5em 0; /* Prevent inconsistent spacing */
 }
 
 .system-text {
-  font-family: 'VT323', monospace; /* Optional for "System" alerts */
+  font-family: 'VT323', monospace;
 }
 
-body{
-    background-image: url(./assets/imgwall.jpeg);
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-attachment: fixed;
-    color: white;
-}
-
-.add-button{
-    color: white;
-    background-color: rgb(17, 113, 210);
-    margin: 10px;
-    border: none;
-    border-radius: 5px;
-    min-width: 60px;
-    min-height: 30px;
-    cursor: pointer;
+/* 4. Button styles (unchanged but ensure they scale with font) */
+.add-button {
+  color: white;
+  background-color: rgb(17, 113, 210);
+  margin: 10px;
+  border: none;
+  border-radius: 5px;
+  min-width: 60px;
+  min-height: 30px;
+  cursor: pointer;
+  font-size: 1rem; /* Explicitly set */
 }
 .add-button:hover {
   background-color: rgb(10, 80, 150);
 }
 
-.remove-button{
-    background-color: hsl(0, 100%, 50%);
-    color: white;
-    border: none;
-    border-radius: 5px;
-    margin: 5px;
-    cursor: pointer;
-    padding: 5px;
+.remove-button {
+  background-color: hsl(0, 100%, 50%);
+  color: white;
+  border: none;
+  border-radius: 5px;
+  margin: 5px;
+  cursor: pointer;
+  padding: 5px;
+  font-size: 1rem;
 }
-.remove-button:hover{
+.remove-button:hover {
   background-color: hsl(0, 100%, 35%);
 }
 
-.change-button{
-    background-color: hsl(120, 100%, 25%);
-    color: white;
-    border-radius: 5px;
-    border: none;
-    padding: 5px;
-    cursor: pointer;
+.change-button {
+  background-color: hsl(120, 100%, 25%);
+  color: white;
+  border-radius: 5px;
+  border: none;
+  padding: 5px;
+  cursor: pointer;
+  font-size: 1rem;
 }
-.change-button:hover{
+.change-button:hover {
   background-color: hsl(120, 100%, 15%);
 }
 
-input[type = "text"]{
-    background-color: hsla(0, 0%, 0%, 0.623);
-    color: white;
-    border: none;
-    padding: 10px;
+/* 5. Input field consistency */
+input[type="text"] {
+  background-color: hsla(0, 0%, 0%, 0.623);
+  color: white;
+  border: none;
+  padding: 10px;
+  font-size: 1rem !important; /* Override potential defaults */
 }
 
+/* 6. List styles */
 ol {
-    list-style-type: none;
-    margin: 10px;
-    padding: 10px;
+  list-style-type: none;
+  margin: 10px;
+  padding: 10px;
+}
+
+/* 7. Mobile responsiveness */
+@media (max-width: 300px) {
+  .add-button,
+  .remove-button,
+  .change-button {
+    min-width: 100%;
+    font-size: 0.9rem; /* Adjust for small screens */
   }
-  @media (max-width:300px) {
-    .add-button,.remove-button,.change-button{
-      min-width: 100%;
-    }
-  }
+}
